@@ -1,19 +1,55 @@
+import com.aluracursos.screenmatch.modelos.Pelicula;
+
 public class Principal {
     public static void main(String[] args) {
         Pelicula miPelicula = new Pelicula();
-        miPelicula.nombre= "SpiderMan No Way Home";
-        miPelicula.fechaDeLanzamiento = 2021;
-        miPelicula.duracionEnMinutos = 148;
+        miPelicula.setNombre("SpiderMan No Way Home");
+        miPelicula.setFechaDeLanzamiento(2021);
+        miPelicula.setDuracionEnMinutos(148);
+        miPelicula.setIncluidoEnElPlan(true);
 
-        System.out.println("Mi pelicula es: " + miPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: " + miPelicula.fechaDeLanzamiento);
+        miPelicula.datosDePeliculas();
+        miPelicula.evalua(10);
+        miPelicula.evalua(10);
+        miPelicula.evalua(9);
+        System.out.println(miPelicula.getTotalDeEvaluaciones());
+        System.out.println(miPelicula.calculaMedia());
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.nombre= "SpiderMan Far From Home";
-        otraPelicula.fechaDeLanzamiento = 2019;
-        otraPelicula.duracionEnMinutos = 130;
 
-        System.out.println("Mi otra pelicula es: " + otraPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
+//        otraPelicula.nombre= "SpiderMan Far From Home";
+//        otraPelicula.fechaDeLanzamiento = 2019;
+//        otraPelicula.duracionEnMinutos = 130;
+//
+//       otraPelicula.datosDePeliculas();
+   }
+
 }
